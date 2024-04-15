@@ -1,9 +1,3 @@
-/*
- * A simple chess AI, by someone who doesn't know how to play chess.
- * Uses the chessboard.js and chess.js libraries.
- *
- * Copyright (c) 2020 Zhang Zeyu
- */
 
 var STACK_SIZE = 100; // maximum size of undo stack
 
@@ -32,10 +26,6 @@ board = Chessboard('myBoard', config);
 
 timer = null;
 
-/*
- * Piece Square Tables, adapted from Sunfish.py:
- * https://github.com/thomasahle/sunfish/blob/master/sunfish.py
- */
 
 var weights = { p: 100, n: 280, b: 320, r: 479, q: 929, k: 60000, k_e: 60000 };
 var pst_w = {
